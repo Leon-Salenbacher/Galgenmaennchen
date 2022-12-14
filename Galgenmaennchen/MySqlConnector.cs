@@ -7,7 +7,7 @@ namespace Projekt_Planungbuero
 {
     class MySqlConnector
     {
-        //Autor:
+        //Autor: Jonas Tran
         MySqlConnection dbVerbindung;
         //Variables
         private string dbHost = "localhost";
