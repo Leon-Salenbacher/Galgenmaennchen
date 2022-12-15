@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.30717.126
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Galgenmaennchen", "Galgenmaennchen\Galgenmaennchen.csproj", "{D5DCB812-E7DB-4550-A0DF-FB4A74DA93C8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "galgenmaennchenTest", "galgenmaennchenTest\galgenmaennchenTest.csproj", "{7C1B5E9D-1074-4B72-933E-F60EC2E9EC02}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D5DCB812-E7DB-4550-A0DF-FB4A74DA93C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5DCB812-E7DB-4550-A0DF-FB4A74DA93C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5DCB812-E7DB-4550-A0DF-FB4A74DA93C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C1B5E9D-1074-4B72-933E-F60EC2E9EC02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C1B5E9D-1074-4B72-933E-F60EC2E9EC02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C1B5E9D-1074-4B72-933E-F60EC2E9EC02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C1B5E9D-1074-4B72-933E-F60EC2E9EC02}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

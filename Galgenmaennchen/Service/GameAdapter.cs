@@ -6,7 +6,23 @@ using System.Threading.Tasks;
 
 namespace Galgenmaennchen.Service
 {
-    class GameAdapter
+    public class GameAdapter
     {
+        public static int maxLetters = 5;
+
+        public string getWord()
+        {
+            string word;
+            int wordLength;
+
+            //get word that fitt conditions
+            do
+            {
+                //get word from api
+                word = "ello";
+                wordLength = word.ToCharArray().Length;
+            } while (wordLength > maxLetters);
+            return word;
+        }
     }
 }

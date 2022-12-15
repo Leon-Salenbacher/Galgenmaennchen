@@ -49,11 +49,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Datenbank\APIConnectorcs.cs" />
     <Compile Include="GUI_Controller\GameController.cs" />
     <Compile Include="GUI_Controller\LeaderBoardController.cs" />
     <Compile Include="GUI_Controller\RatingController.cs" />
     <Compile Include="GUI_Controller\UserController.cs" />
-    <Compile Include="MySqlConnector.cs" />
+    <Compile Include="Datenbank\MySqlConnector.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
