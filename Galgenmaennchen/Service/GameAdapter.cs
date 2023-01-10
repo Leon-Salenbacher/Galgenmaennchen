@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -9,20 +10,28 @@ namespace Galgenmaennchen.Service
     public class GameAdapter
     {
         public static int maxLetters = 5;
+        public static string apiURL = "https://random-word-api.herokuapp.com/word?lang=de";
+        static HttpClient client = new HttpClient();
 
-        public string getWord()
+        public async Task<char[]> getWord()
         {
-            string word;
-            int wordLength;
+            string word = null;
+            char[] wordArr;
 
             //get word that fitt conditions
             do
             {
                 //get word from api
-                word = "ello";
-                wordLength = word.ToCharArray().Length;
-            } while (wordLength > maxLetters);
-            return word;
+                HttpResponseMessage response = 
+                    await client.GetAsync(apiURL);
+                if (response.IsSuccessStatusCode)
+                {
+                     word = await response.Content.ReadAsStringAsync();
+                }
+
+                wordArr = word.ToCharArray();
+            } while (wordArr.Length > maxLetters);
+            return wordArr;
         }
     }
 }
